@@ -1,0 +1,54 @@
+<!-- <div *ngIf="user">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="card" style="width: 15rem;" *ngFor="let u of user">
+            {{ u.name }}
+
+            <button mdbBtn type="button" color="primary" mdbWavesEffect routerLink="{{u.id}}">Details</button>
+           
+            <router-outlet></router-outlet>
+        </div>
+        </div>
+    </div>
+</div> -->
+<div class="row">
+        <div id="root"></div>
+      </div>
+      <div class="row" >
+        <div class="col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let u of user">
+          <div class="card">
+            <img class="card-img-top" src="https://picsum.photos/200/150/?random
+    ">
+              <div class="float-right m-1" style="position:absolute;right:0">
+                <!-- <button type="button" class="btn btn-light m-0 text-left" style="border:#444444">
+                  <i class="fas fa-ellipsis-v"></i>
+                </button> -->
+              </div>
+            <div class="whenhovered">
+            
+              <div class="mt-5 pt-5"  >
+                <button type="button" class="btn btn-primary w-75 m-3 mt-5 text-left" routerLink="{{u.id}}">
+                  <i class="fa fa-user fa-fw"></i>
+                  Details
+                </button>
+              </div>         
+           
+            </div>
+    
+            <div class="card-block" >
+              <h4 class="card-title">{{ u.name }}</h4>
+              <div class="meta">
+                <a href="#">Friends</a>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet, consectetur.
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="float-right">Joined in 2013</span>
+              <span><i class=""></i>75 Friends</span>
+            </div>
+          </div>
+        </div>
+
+  

@@ -1,0 +1,32 @@
+
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let c of comment">
+<mdb-card style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(47).jpg')"
+    class="card-image mb-3">
+
+    <!-- Content -->
+    <div class="text-white text-center d-flex align-items-center rgba-indigo-strong py-5 px-4" >
+        <div>
+            <h5 class="orange-text">
+                <mdb-icon fas icon="desktop"></mdb-icon>
+                Software
+            </h5>
+            <h3 class="card-title pt-2"><strong>This is card comment</strong></h3>
+            <p>{{ c.body }}</p>
+            <a mdbBtn color="deep-orange" class="waves-light" mdbWavesEffect>
+                <mdb-icon far icon="clone" class="left"></mdb-icon>
+                View
+                project
+            </a>
+        </div>
+    </div>
+    <!-- Content -->
+</mdb-card>
+</div>
+</div>
+</div>
+<!-- Card -->

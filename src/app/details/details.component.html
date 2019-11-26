@@ -1,0 +1,64 @@
+
+
+       <!-- <div class="card text-black bg-light">
+            <p class="card-text" >   {{ list.name }}</p>
+     <p class="card-text"> {{ list.username }}</p> 
+               <h1> {{ list.email }}</h1>
+               <h1> {{ list.address.suite }}</h1>
+               <h1> {{ list.company.name }}</h1>
+               <h1> {{ list.name }}</h1>
+               <div *ngFor="let u of com">
+                   <ul> 
+                       <li>{{u.body}}</li>
+
+                   
+                </ul>
+                </div>
+           
+            </div>   -->
+<div class="py-5">
+    <div class="container">
+        <div class="row hidden-md-up">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title">{{ list.name }}</h4>
+                        <h6 class="card-subtitle text-muted">{{ list.username }}</h6>
+                        <p class="card-text p-y-1">{{ list.email }}</p>
+                        <p class="card-title font-weight-bold">Adress</p>
+                        <p class="card-text p-y-1">{{ list.address.suite }}</p>
+                        <p class="card-title font-weight-bold">Company</p>
+                        <p class="card-text p-y-1">{{ list.company.name }}</p>
+
+
+
+
+                        <a href="#" class="card-link">link</a>
+                        <a href="#" class="card-link">Second link</a>         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<mdb-card>
+        <mdb-card-body>
+
+                <!--Title-->
+                <mdb-card-title>
+                  <h4>Posts</h4>
+                </mdb-card-title>
+            
+                <!--Text-->
+                <mdb-card-text> 
+                    <div *ngFor="let u of com">
+                        <ul>
+                            <li>{{u.body}}</li>
+                            <button type="button" class="btn btn-primary w-3 m-7 mt-8 text-center" [routerLink]="['/posts',list.id]" >ff</button>
+                         </ul>
+                    </div>
+                </mdb-card-text>
+            
+                <a href="#" mdbBtn color="primary" mdbWavesEffect>malla jaw</a>
+              </mdb-card-body>
+</mdb-card>

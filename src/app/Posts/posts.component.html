@@ -1,0 +1,10 @@
+
+<ul>
+    <div *ngFor="let p of post">
+    <li >
+
+        {{ p.title }}
+    </li>
+    <button type="button" class="btn btn-primary w-30 m-3 mt-5 text-left" routerLink="{{p.id}}">Comments</button>
+</div>
+</ul>
